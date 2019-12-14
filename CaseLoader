@@ -1,0 +1,13 @@
+package Training;
+
+public class Testing {
+	
+	public static void main (String args []) {
+		Class C = Testing.class;
+		
+		System.out.println(String.class.getClassLoader());
+		System.out.println(C.getClassLoader());
+		System.out.println(Math.class.getClassLoader());
+	}
+
+}
