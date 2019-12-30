@@ -18,47 +18,44 @@ public class GirlfriendNamePrint {
 		
 		//Accepting Inputs
 		Scanner input = new Scanner (System.in);	
-		int count = 1;
+				
 		
-		do {
-		try {
+			
 		System.out.println("Enter the name of your Girlfriend? ");
 		String name =input.nextLine();
-		if(name.isEmpty()) {
-			System.out.println("Nothing was entered. Please try again");
-				} 
 		
+		while(name.isEmpty()) {
+			System.out.println("Nothing was entered. Please try again");
+			name =input.nextLine();
+				} 
+			
 			
 		System.out.println("Enter your Girlfriend locations? ");
 		String location =input.nextLine();
-		if(location.isEmpty())
+		while(location.isEmpty()) {
 			System.out.println("Nothing was entered. Please try again");
+			location =input.nextLine();
+		}
 			
 		
 		System.out.println("Enter the age of your Girlfriend");
 		String age =input.nextLine();
-		if(age.isEmpty())
+		while(age.isEmpty()) {
 			System.out.println("Nothing was entered. Please try again");
+			age =input.nextLine();
+						
+		}
 			
-		
-		
+				
 		//Setting up Input
 		gf.setName(name);
 		gf.setLocation(location);
-		gf.setAge(age);
-		
-		}
-		catch(Exception InPut ) {
-			System.out.println("This is an Error Print");
-		
+		gf.setAge(age.valueOf(age));	
 			
 		//Calling up method Saying to Print
 		gf.Saying();
 		}
-		
-		}while (count==1);	
-		
 	}	
-}
+
 
 
