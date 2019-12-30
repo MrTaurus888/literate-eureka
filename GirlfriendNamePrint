@@ -1,0 +1,64 @@
+package Training;
+import java.util.Scanner;
+import java.lang.Throwable;
+
+
+@SuppressWarnings("unused")
+public class GirlfriendNamePrint {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		
+	
+		
+		//Instance for Girlfriend
+		GirlFriend gf= new GirlFriend();
+		
+		
+		
+		//Accepting Inputs
+		Scanner input = new Scanner (System.in);	
+		int count = 1;
+		
+		do {
+		try {
+		System.out.println("Enter the name of your Girlfriend? ");
+		String name =input.nextLine();
+		if(name.isEmpty()) {
+			System.out.println("Nothing was entered. Please try again");
+				} 
+		
+			
+		System.out.println("Enter your Girlfriend locations? ");
+		String location =input.nextLine();
+		if(location.isEmpty())
+			System.out.println("Nothing was entered. Please try again");
+			
+		
+		System.out.println("Enter the age of your Girlfriend");
+		String age =input.nextLine();
+		if(age.isEmpty())
+			System.out.println("Nothing was entered. Please try again");
+			
+		
+		
+		//Setting up Input
+		gf.setName(name);
+		gf.setLocation(location);
+		gf.setAge(age);
+		
+		}
+		catch(Exception InPut ) {
+			System.out.println("This is an Error Print");
+		
+			
+		//Calling up method Saying to Print
+		gf.Saying();
+		}
+		
+		}while (count==1);	
+		
+	}	
+}
+
+
