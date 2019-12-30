@@ -1,0 +1,50 @@
+package Training;
+
+public class GirlFriend {
+	
+	private String Name;
+	private String Location;
+	private String Age;
+	
+	//Constructor for Fields
+	
+	
+	public GirlFriend() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+			public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public String getLocation() {
+		return Location;
+	}
+
+	public void setLocation(String location) {
+		Location = location;
+	}
+
+	public String getAge() {
+		return Age;
+	}
+
+	public void setAge(String age) {
+		Age = age;
+	}
+	
+	public void Saying() {
+		System.out.println("My Girlfriend name is " + getName());
+		System.out.println("She lives in " + getLocation());
+		System.out.println("She is " + getAge() +"  " +"years old");
+		
+	}
+	
+	
+
+}
