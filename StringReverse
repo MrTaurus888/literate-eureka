@@ -1,0 +1,25 @@
+package KiranClassess;
+import java.util.*;
+
+public class StringReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String A = "I Am a Boy";
+		String B= "I am a Girl";
+		int counter = 1 ;
+		do {
+		try {
+		Scanner input = new Scanner (System.in);
+		System.out.println("Enter your words here: ");
+		String NewWord =input.nextLine();		
+		StringBuilder Ola= new StringBuilder();
+		Ola = Ola.append(NewWord);
+		System.out.println(Ola.reverse());
+		}catch(Exception e ) {
+			System.out.println("This is an Error Page");
+		}
+		}while (counter ==1);
+	}
+
+}
